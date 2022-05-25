@@ -1,0 +1,39 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "../Header/Header.css"
+import React from "react";
+import TypeAnimation from 'react-type-animation';
+
+const Header = () => {
+    return (
+        <div className='headerContainer'>
+            <h1 className='hello'>Hello, I'm Austyn Whaley and I am a...</h1>
+            <h2 className='typeTitle'> 
+                <TypeAnimation
+                className="cursor"
+                repeat={1}
+                wrapper="h1"
+                cursor={false}
+                sequence={[
+                    'Full Stack Deve',
+                    1000,
+                    'Software Dev',
+                    1000,
+                    "Web Develop",
+                    1000,
+                    'Desinger',
+                    1000,
+                    'Creator',
+                    1000,
+                    'Problem solver',
+                    1000,
+                    'Master Googler',
+                    1000,
+                    'Developer'
+                ]}
+                />
+            </h2>
+            
+        </div>
+    );
+}
+export default Header
