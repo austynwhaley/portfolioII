@@ -4,7 +4,8 @@ body {
   background-image: url("./images/IMG_0628.jpg");
   background-size:     cover;                      /* <------ */
   background-attachment: fixed;
-  background-position: top center;      
+  background-position: center center;      
  
 }
+
 

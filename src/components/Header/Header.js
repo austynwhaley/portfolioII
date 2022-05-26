@@ -14,11 +14,11 @@ const Header = () => {
                 wrapper="h1"
                 cursor={false}
                 sequence={[
-                    'Full Stack Deve',
+                    'Full Stack Develp',
                     1000,
-                    'Software Dev',
+                    'Software Engin',
                     1000,
-                    "Web Develop",
+                    "Web Dev",
                     1000,
                     'Desinger',
                     1000,
