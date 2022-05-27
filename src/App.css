@@ -4,4 +4,19 @@ body{
   background-color: rgba(221,221,221,255);
 }
 
+.links{
+  color: aliceblue;
+}
+
+a:hover{
+  color: orange;
+}
+a{
+  color: aliceblue;
+}
+
+.toolkit{
+  color: aliceblue;
+}
+
 
