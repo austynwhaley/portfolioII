@@ -1,10 +1,15 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "../Header/Header.css"
-import React from "react";
 import TypeAnimation from 'react-type-animation';
+import "./style.css"
+import React from 'react';
 
-const Header = () => {
-    return (
+function Home() {
+    return(
+
+      <div className='homepage'>
+        
+        <div className='header'>
+
         <div className='headerContainer'>
             <h1 className='hello'>Hello, I'm Austyn Whaley and I am a...</h1>
             <h2 className='typeTitle'> 
@@ -34,6 +39,10 @@ const Header = () => {
             </h2>
             
         </div>
-    );
+        </div>
+        
+      </div>
+    )
 }
-export default Header
+
+export default Home;
