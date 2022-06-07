@@ -1,6 +1,6 @@
 import "./App.css"
 import React, { Component } from 'react';
-import {BrowserRouter} from "react-router-dom";
+import {Route} from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar"
 
 
@@ -16,10 +16,10 @@ class App extends Component {
       <div className="App">
           <Navbar/>
             <div>
-              <BrowserRouter exact path='/' component={Home}/>
-              <BrowserRouter path='/about' component={About}/>
-              <BrowserRouter path='/projects' component={Projects}/>
-              <BrowserRouter path='/resume' component={Resume}/>
+              <Route exact path='/' component={Home}/>
+              <Route path='/about' component={About}/>
+              <Route path='/projects' component={Projects}/>
+              <Route path='/resume' component={Resume}/>
             </div>
       </div>
     )

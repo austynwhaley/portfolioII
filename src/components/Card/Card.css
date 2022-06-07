@@ -4,17 +4,13 @@
 }
 
 .cardBody{
-    box-shadow: 0 4px 8px 0 rgb(21, 21, 24);
-    transition: 0.3s;
+    
     width: 50%;
     border-radius: 5px;
     background-color: rgb(21, 21, 24);
+    
 }
 
-.cardBody:hover{
-    box-shadow: 0 14px 14px 0 rgb(200, 200, 200);
-    opacity: 0.9;
-}
 
 .cardTitle{
     color:aliceblue;
