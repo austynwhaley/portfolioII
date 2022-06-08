@@ -1,7 +1,6 @@
-import "./App.css"
 import React, { Component } from 'react';
 import {Route} from "react-router-dom";
-import Navbar from "./components/Navbar/Navbar"
+import {withRouter} from 'react-router';
 
 
 import Home from './pages/Home/index';
@@ -14,16 +13,13 @@ class App extends Component {
   render() {
     return(
       <div className="App">
-          <Navbar/>
-            <div>
-              <Route exact path='/' component={Home}/>
-              <Route path='/about' component={About}/>
-              <Route path='/projects' component={Projects}/>
-              <Route path='/resume' component={Resume}/>
-            </div>
+              <Route exact path ="/" component={Home}/>
+              <Route path ="/about" component={About}/>
+              <Route path="/projects" component={Projects}/>
+              <Route path="/resume" component={Resume}/>
       </div>
     )
   }
 }
 
-export default App;
+export default withRouter(App);

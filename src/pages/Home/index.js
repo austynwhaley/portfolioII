@@ -3,12 +3,14 @@ import TypeAnimation from 'react-type-animation';
 import "./style.css"
 import React from 'react';
 import Card from "../../components/Card/Card"
+import Navbar from "../../components/Navbar/Navbar"
 
 function Home() {
     return(
 
       <div className='homepage'>
-        
+        <Navbar
+        status = ""/>
         <div className='header'>
           <div className='headerContainer'>
               <h1 className='hello'>Hello, I'm Austyn Whaley and I am a...</h1>

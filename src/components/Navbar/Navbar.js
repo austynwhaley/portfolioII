@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../Navbar/Navbar.css";
 import React from "react";
 
-const Navbar = () => {
+const Navbar = (props) => {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
         <a className="navbar-brand" href="/">
@@ -22,9 +22,9 @@ const Navbar = () => {
   
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav ml-auto">
-            <li className="nav-item active">
+            <li className={`nav-item ${props.status}`}>
               <a className="nav-link" href="/about">
-                About <span className="sr-only">(current)</span>  
+                About <span className="sr-only">{props.span}</span>  
               </a>
             </li>
             <li className="nav-item">
