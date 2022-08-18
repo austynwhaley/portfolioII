@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../Navbar/Navbar.css";
 import React from "react";
+import { HashLink as Link } from 'react-router-hash-link'
 
 const Navbar = () => {
     return (
@@ -33,9 +34,9 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/resume">
+              <Link className="nav-link" to="/resume">
                 Resume
-              </a>
+              </Link>
             </li>
             <li className="nav-item dropdown">
               

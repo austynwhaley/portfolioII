@@ -1,0 +1,33 @@
+.header{
+    color: aliceblue;
+    margin:auto;
+}
+hr{
+    color: aliceblue;
+}
+
+.resumeCont{
+    margin-top: 15%;
+    margin-left: 17%;
+    width: 65%;
+    border-radius: 5px;
+    background-color: #212529;
+}
+
+.resumeBody{
+    color: aliceblue;
+    margin-left: 5%;
+}
+
+.skOption{
+    margin-left: 7%;
+}
+
+.custom {
+    width: 150px !important;
+    padding: 10px;
+}
+
+Button {
+    padding: 2px;
+}

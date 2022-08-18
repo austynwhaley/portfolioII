@@ -1,6 +1,6 @@
 import "./App.css"
 import React, { Component } from 'react';
-import {Route} from "react-router-dom";
+import {Route, Switch} from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar"
 
 
@@ -15,12 +15,12 @@ class App extends Component {
     return(
       <div className="App">
           <Navbar/>
-            <div>
+            <Switch>
               <Route exact path='/' component={Home}/>
-              <Route path='/about' component={About}/>
-              <Route path='/projects' component={Projects}/>
-              <Route path='/resume' component={Resume}/>
-            </div>
+              <Route exact path='/about/' component={About}/>
+              <Route exact path='/projects/' component={Projects}/>
+              <Route exact path='/resume/' component={Resume}/>
+            </Switch>
       </div>
     )
   }
