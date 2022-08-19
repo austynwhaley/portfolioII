@@ -1,6 +1,18 @@
+@media (max-width: 400px) {
+    .resumeCont{
+        margin: 0 auto;
+        margin-left: 0%;
+        font-size: large;
+    }
+
+    .container{
+        margin-left: 0;
+    }
+}
 .container{
     padding: 0;
     margin: 0;
+    margin-left: 8%;
     box-sizing: border-box;
 }
 
@@ -14,14 +26,6 @@ hr{
 
 h5{
     text-decoration: underline;
-}
-
-@media (max-width: 400px) {
-    .resumeCont{
-        margin: 0 auto;
-        margin-left: 0%;
-        font-size: large;
-    }
 }
 
 .resumeCont{
