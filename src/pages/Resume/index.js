@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { React, useState, useRef} from 'react';
 import '../Resume/style.css';
 import Button from 'react-bootstrap/Button';
+import { HashLink as Link } from 'react-router-hash-link'
 
 
 const Resume = () => {
@@ -51,7 +52,7 @@ return(
                 <hr/>
                 <div className='summary'>
                     <h5>Professional Summary</h5>
-                    <p>I am a deicated and adapatable employee who sucessfully handles fast paced work enviroments.</p>
+                    <p>I am a dedicated and adaptable employee who successfully handles fast paced work environments.</p>
                     <p>Proven willingness to take on any task to support the team and help the company succeed</p>
                     <p>Offers strong time management and problem solving abilities</p>
                 </div>
@@ -82,7 +83,7 @@ return(
                         <h6>Fischer Homes <span className='jobLength'>July 2022-Present </span>Applications Developer</h6>
                         <p className='jobDesc'> - Designed, developed and tested applications in alignment with company coding and quality standards.</p>
                         <p className='jobDesc'> - Conducted robust unit testing to verify deliverables match design requirements.</p>
-                        <p className='jobDesc'> - Documented project-related expertise to build knowledge base for implementations.</p>
+                        <p className='jobDesc'> - Documented project-related expertise to build a knowledge base for implementations.</p>
                         <p className='jobDesc'> - Built product deliverables according to specifications and escalated technical design or specification issues.</p>
                         <p className='jobDesc'> - Developed data migration and integration processes to legacy systems using identified development tools and technologies.</p>
                         <p className='jobDesc'> - Developed moderately complex code based on business requirements or user stories.</p>
@@ -97,10 +98,10 @@ return(
                         <p className='jobDesc'> - Kept up to date on web developments and trends</p>
                     </div>
                     <div className='job3'>
-                        <h6>Tri-County Furnitre Restoration <span className='jobLength'>October 2015-August 2021 </span>Woodworker</h6>
+                        <h6>Tri-County Furniture Restoration <span className='jobLength'>October 2015-August 2021 </span>Woodworker</h6>
                         <p className='jobDesc'> - Trimmed, sanded, and scraped surfaces and joints to prepare articles for finishing with precision.</p>
                         <p className='jobDesc'> - Installed hardware such as hinges, handles, catches, or drawer pulls, using hand tools.</p>
-                        <p className='jobDesc'> - Set up and operated machines, including power saws, jointers, mortisers, tenoners, molders, and shapers.</p>
+                        <p className='jobDesc'> - Set up and operate machines, including power saws, jointers, mortisers, tenoners, molders, and shapers.</p>
                         <p className='jobDesc'> - Satisfied customers consistently, walking each through entire processes and quickly resolving any problems.</p>
                         <p className='jobDesc'> - Completed all tasks promptly and with minimal oversight.</p>
                     </div>
@@ -110,7 +111,7 @@ return(
                     <h5>Education</h5>
                     <div className='schoolz'>
                         <div className='school1'>
-                            <h6>The Ohio State Univerity <span className='jobLength'>April 2021</span></h6>
+                            <h6>The Ohio State University <span className='jobLength'>April 2021</span></h6>
                             <p>Full-Stack Coding Bootcamp Certification</p>
                         </div>
                         <div className='school2'>
@@ -123,7 +124,9 @@ return(
         </div>
         <div className='downloadPdf'>
             <Button className='customPdf' variant='dark' ref={target} onClick={() => setShow(!show)}>
-                Download Resume
+                <a href="/Resume-08-19.pdf" download>
+                    Download Resume
+                </a>
             </Button>
         </div>
     </div>
