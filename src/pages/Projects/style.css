@@ -1,0 +1,17 @@
+.projectsCont{
+    margin-top: 8%;
+    margin-bottom: 8%;
+    margin-left: 15%;
+    width: 75%;
+    border-radius: 5px;
+    background-color: #212529;
+    padding: 10px;
+}
+
+iframe{
+    border-radius: 15px;
+}
+
+h1{
+    color: aliceblue;
+}

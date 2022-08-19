@@ -8,6 +8,13 @@ const Resume = () => {
 
   const [show, setShow] = useState(false);
   const target = useRef(null);
+  const [color, setColor] = useState('dark')
+
+  const handleClick = () => {
+    setShow(!show);
+    (color === 'dark' ? setColor('warning') : setColor('dark'))
+}
+
 
 return(
     <div className='container'>
@@ -30,10 +37,10 @@ return(
                 <div className='skillz'>
                     <h5>Skills</h5>
                     <div className='skOption'>
-                        <Button className='custom' variant='dark' ref={target} onClick={() => setShow(!show)}>
+                        <Button className='custom' variant={color} ref={target} onClick={handleClick}>
                             HTML/CSS
                         </Button>
-                        <Button className='custom' variant='dark' ref={target} onClick={() => setShow(!show)}>
+                        <Button className='custom' variant={color} ref={target} onClick={() => setShow(!show)}>
                             Javascript
                         </Button>
                         <Button className='custom' variant='dark' ref={target} onClick={() => setShow(!show)}>

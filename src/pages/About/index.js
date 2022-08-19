@@ -9,13 +9,9 @@ function About() {
     return(
 
       <div className='aboutContainer'>
-        <Navbar
-        status='active'
-        span= '(current)'
-        />
         <Card
         bootstrap="mx-auto card w-50"
-        title= "Projects"
+        title= "About Me"
         animate="fade-right">
             <p>
                 I grew up in belevue ky

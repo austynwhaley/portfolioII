@@ -1,3 +1,9 @@
+.container{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .header{
     color: aliceblue;
     margin:auto;
@@ -26,7 +32,7 @@ h5{
 }
 
 .skOption{
-    margin-left: 15%;
+    margin-left: 7%;
 }
 
 .custom {

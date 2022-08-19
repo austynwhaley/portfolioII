@@ -24,14 +24,14 @@ const Navbar = (props) => {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav ml-auto">
             <li className={`nav-item ${props.status}`}>
-              <a className="nav-link" href="/about">
-                About <span className="sr-only">{props.span}</span>  
-              </a>
+              <Link className="nav-link" to="/about">
+                About
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/projects">
+              <Link className="nav-link" to="/projects">
                 Projects
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/resume">

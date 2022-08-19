@@ -6,14 +6,13 @@ body{
 
 .headerContainer{
   margin: auto;
-  margin-top: 10%;
-  margin-top: 0.5%;
-  margin-bottom: 20%;
+  margin-top: 15%;
   width: 58%;
   background-color:  #212529;
   padding: 10px;
   border-radius: 15px;
   color: aliceblue;
+  
 }
 
 .header{
