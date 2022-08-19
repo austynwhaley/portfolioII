@@ -1,18 +1,5 @@
-@media (max-width: 400px) {
-    .resumeCont{
-        margin: 0 auto;
-        margin-left: 0%;
-        font-size: large;
-    }
-
-    .container{
-        margin-left: 0;
-    }
-}
 .container{
     padding: 0;
-    margin: 0;
-    margin-left: 8%;
     box-sizing: border-box;
 }
 
@@ -28,10 +15,11 @@ h5{
     text-decoration: underline;
 }
 
+
 .resumeCont{
     margin-top: 10%;
     margin-bottom: 1%;
-    width: 75%;
+    width: 100%;
     border-radius: 5px;
     background-color: #212529;
     padding: 10px;

@@ -7,7 +7,6 @@ import Button from 'react-bootstrap/Button';
 const Resume = () => {
 
   const [show, setShow] = useState(false);
-  const [selected, setSelected] = useState(0);
   const target = useRef(null);
   const lists = [
     {id: 1, title: 'HTML/CSS', variant: 'warning' },
@@ -40,8 +39,8 @@ const Resume = () => {
 
 
 return(
-    <div className='container d-flex justify-content-center'>
-        <div className='resumeCont '>
+    <div className='container d-flex justify-content-lg-center'>
+        <div className='resumeCont'>
             <h1 className='header'>Resume</h1>
             <hr/>
             <div className='resumeBody'>
