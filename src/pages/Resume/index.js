@@ -31,6 +31,7 @@ const Resume = () => {
     {id: 19, title: 'Typescript', variant: 'dark'},
     {id: 20, title: 'PHP', variant: 'dark'},
     {id: 21, title: 'Heroku', variant: 'dark'},
+    {id: 22, title: 'JSX', variant: 'warning'},
   ]
 
   const handleClick = () => {
