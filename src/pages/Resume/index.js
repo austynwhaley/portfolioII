@@ -97,7 +97,51 @@ return(
                         </Button>
                     </div>
                 </div>
+                <hr/>
+                <div className='xpCont'>
+                    <h5>Experience</h5>
+                    <div className='job1'>
+                        <h6>Fischer Homes <span className='jobLength'>July 2022-Present </span>Applications Developer</h6>
+                        <p className='jobDesc'> - lorem ipsom</p>
+                        <p className='jobDesc'> - lorem ipsom</p>
+                        <p className='jobDesc'> - lorem ipsom</p>
+                        <p className='jobDesc'> - lorem ipsom</p>
+                    </div>
+                    <div className='job2'>
+                        <h6>LiveShopper Sassie <span className='jobLength'>August 2021-July 2022 </span>IT/Support</h6>
+                        <p className='jobDesc'> - lorem ipsom</p>
+                        <p className='jobDesc'> - lorem ipsom</p>
+                        <p className='jobDesc'> - lorem ipsom</p>
+                        <p className='jobDesc'> - lorem ipsom</p>
+                    </div>
+                    <div className='job3'>
+                        <h6>Tri-County Furnitre Restoration <span className='jobLength'>October 2015-August 2021 </span>Woodworker</h6>
+                        <p className='jobDesc'> - lorem ipsom</p>
+                        <p className='jobDesc'> - lorem ipsom</p>
+                        <p className='jobDesc'> - lorem ipsom</p>
+                        <p className='jobDesc'> - lorem ipsom</p>
+                    </div>
+                </div>
+                <hr/>
+                <div className='eduCont'>
+                    <h5>Education</h5>
+                    <div className='schoolz'>
+                        <div className='school1'>
+                            <h6>The Ohio State Univerity <span className='jobLength'>April 2021</span></h6>
+                            <p>Full-Stack Coding Bootcamp Certification</p>
+                        </div>
+                        <div className='school2'>
+                            <h6>Bellevue High School <span className='jobLength'>May 2012</span></h6>
+                            <p>High School Diploma</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div className='downloadPdf'>
+            <Button className='customPdf' variant='dark' ref={target} onClick={() => setShow(!show)}>
+                Download Resume
+            </Button>
         </div>
     </div>
 )

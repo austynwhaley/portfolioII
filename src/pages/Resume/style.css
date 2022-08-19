@@ -6,12 +6,18 @@ hr{
     color: aliceblue;
 }
 
+h5{
+    text-decoration: underline;
+}
+
 .resumeCont{
-    margin-top: 15%;
-    margin-left: 17%;
-    width: 65%;
+    margin-top: 8%;
+    margin-bottom: 1%;
+    margin-left: 15%;
+    width: 75%;
     border-radius: 5px;
     background-color: #212529;
+    padding: 10px;
 }
 
 .resumeBody{
@@ -20,7 +26,7 @@ hr{
 }
 
 .skOption{
-    margin-left: 7%;
+    margin-left: 15%;
 }
 
 .custom {
@@ -30,4 +36,21 @@ hr{
 
 Button {
     padding: 2px;
+}
+
+.jobLength {
+    font-size: x-small;
+    font-style: italic;
+    color: orange;
+}
+
+.eduCont{
+    padding-bottom: 50px;
+}
+
+.downloadPdf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
 }
