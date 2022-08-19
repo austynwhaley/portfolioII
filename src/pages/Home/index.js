@@ -18,19 +18,19 @@ function Home() {
                   cursor={false}
                   sequence={[
                       'Full Stack Develp',
-                      1000,
+                      500,
                       'Software Engin',
-                      1000,
+                      500,
                       "Web Dev",
-                      1000,
+                      500,
                       'Desinger',
-                      1000,
+                      1500,
                       'Creator',
-                      1000,
+                      1500,
                       'Problem solver',
-                      1000,
+                      1500,
                       'Master Googler',
-                      1000,
+                      1500,
                       'Developer'
                   ]}
                   />

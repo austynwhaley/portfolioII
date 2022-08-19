@@ -1,10 +1,10 @@
 .projectsCont{
     margin-top: 8%;
-    margin: 0 auto;
-    width: 50%;
+    width: 100%;
     border-radius: 5px;
     background-color: #212529;
     padding: 10px;
+    color: aliceblue;
 }
 
 iframe{
