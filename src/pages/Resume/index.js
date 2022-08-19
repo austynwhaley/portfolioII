@@ -40,8 +40,8 @@ const Resume = () => {
 
 
 return(
-    <div className='container'>
-        <div className='resumeCont'>
+    <div className='container d-flex justify-content-center'>
+        <div className='resumeCont '>
             <h1 className='header'>Resume</h1>
             <hr/>
             <div className='resumeBody'>
