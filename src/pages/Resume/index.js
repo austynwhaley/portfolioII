@@ -7,12 +7,34 @@ import Button from 'react-bootstrap/Button';
 const Resume = () => {
 
   const [show, setShow] = useState(false);
+  const [selected, setSelected] = useState(0);
   const target = useRef(null);
-  const [color, setColor] = useState('dark')
+  const lists = [
+    {id: 1, title: 'HTML/CSS', variant: 'warning' },
+    {id: 2, title: 'Javascript', variant: 'warning'},
+    {id: 3, title: 'jQuery', variant: 'dark'},
+    {id: 4, title: 'React.js', variant: 'warning'},
+    {id: 5, title: 'Node.js', variant: 'warning'},
+    {id: 6, title: 'Express/npm', variant: 'warning'},
+    {id: 7, title: 'SQL', variant: 'warning'},
+    {id: 8, title: 'MongoDB', variant: 'dark'},
+    {id: 9, title: 'Sequelize', variant: 'warning'},
+    {id: 10, title: 'Vue.js', variant: 'dark'},
+    {id: 11, title: 'C++', variant: 'dark'},
+    {id: 12, title: 'C/C#', variant: 'dark'},
+    {id: 13, title: 'Docker', variant: 'warning'},
+    {id: 14, title: 'Apache', variant: 'dark'},
+    {id: 15, title: 'Git', variant: 'warning'},
+    {id: 16, title: 'VS/VS Code', variant: 'warning'},
+    {id: 17, title: 'DBeaver', variant: 'warning'},
+    {id: 18, title: 'AWS', variant: 'warning'},
+    {id: 19, title: 'Typescript', variant: 'dark'},
+    {id: 20, title: 'PHP', variant: 'dark'},
+    {id: 21, title: 'Heroku', variant: 'dark'},
+  ]
 
   const handleClick = () => {
     setShow(!show);
-    (color === 'dark' ? setColor('warning') : setColor('dark'))
 }
 
 
@@ -37,94 +59,50 @@ return(
                 <div className='skillz'>
                     <h5>Skills</h5>
                     <div className='skOption'>
-                        <Button className='custom' variant={color} ref={target} onClick={handleClick}>
-                            HTML/CSS
-                        </Button>
-                        <Button className='custom' variant={color} ref={target} onClick={() => setShow(!show)}>
-                            Javascript
-                        </Button>
-                        <Button className='custom' variant='dark' ref={target} onClick={() => setShow(!show)}>
-                            jQuery
-                        </Button>
-                        <Button className='custom' variant='dark' ref={target} onClick={() => setShow(!show)}>
-                            React.js
-                        </Button>
-                        <Button className='custom' variant='dark' ref={target} onClick={() => setShow(!show)}>
-                            Node.js
-                        </Button>
-                        <Button className='custom' variant='dark' ref={target} onClick={() => setShow(!show)}>
-                            Express/npm
-                        </Button>
-                        <Button className='custom' variant='dark' ref={target} onClick={() => setShow(!show)}>
-                            SQL
-                        </Button>
-                        <Button className='custom'variant='dark' ref={target} onClick={() => setShow(!show)}>
-                            MongoDB
-                        </Button>
-                        <Button className='custom' variant='dark' ref={target} onClick={() => setShow(!show)}>
-                            Sequelize
-                        </Button>
-                        <Button className='custom' variant='dark' ref={target} onClick={() => setShow(!show)}>
-                            Vue.js
-                        </Button>
-                        <Button className='custom' variant='dark' ref={target} onClick={() => setShow(!show)}>
-                            C++
-                        </Button>
-                        <Button className='custom' variant='dark' ref={target} onClick={() => setShow(!show)}>
-                            C/C#
-                        </Button>
-                        <Button className='custom' variant='dark' ref={target} onClick={() => setShow(!show)}>
-                            Docker
-                        </Button>
-                        <Button className='custom' variant='dark' ref={target} onClick={() => setShow(!show)}>
-                            Apache
-                        </Button>
-                        <Button className='custom' variant='dark' ref={target} onClick={() => setShow(!show)}>
-                            Git
-                        </Button>
-                        <Button className='custom' variant='dark' ref={target} onClick={() => setShow(!show)}>
-                            VS/VS Code
-                        </Button>
-                        <Button className='custom' variant='dark' ref={target} onClick={() => setShow(!show)}>
-                            DBeaver
-                        </Button>
-                        <Button className='custom' variant='dark' ref={target} onClick={() => setShow(!show)}>
-                            AWS
-                        </Button>
-                        <Button className='custom' variant='dark' ref={target} onClick={() => setShow(!show)}>
-                            TypeScript
-                        </Button>
-                        <Button className='custom' variant='dark' ref={target} onClick={() => setShow(!show)}>
-                            PHP
-                        </Button>
-                        <Button className='custom' variant='dark' ref={target} onClick={() => setShow(!show)}>
-                            Heroku
-                        </Button>
+                        {lists.map((list) => (
+                            <Button
+                            key={list.id}
+                            ref={target}
+                            onClick={() => {handleClick(list)}}
+                            variant = {list.variant}
+                            className='custom'
+                            >
+                            {list.title}
+                            </Button>
+                        ))}
                     </div>
+                </div>
+                <div className='techDesc'>
+                    <Button className='customDesc' variant='warning' ref={target} onClick={() => setShow(!show)}>The highlighted technologies are what I'm using currently as a tech stack</Button>
                 </div>
                 <hr/>
                 <div className='xpCont'>
                     <h5>Experience</h5>
                     <div className='job1'>
                         <h6>Fischer Homes <span className='jobLength'>July 2022-Present </span>Applications Developer</h6>
-                        <p className='jobDesc'> - lorem ipsom</p>
-                        <p className='jobDesc'> - lorem ipsom</p>
-                        <p className='jobDesc'> - lorem ipsom</p>
-                        <p className='jobDesc'> - lorem ipsom</p>
+                        <p className='jobDesc'> - Designed, developed and tested applications in alignment with company coding and quality standards.</p>
+                        <p className='jobDesc'> - Conducted robust unit testing to verify deliverables match design requirements.</p>
+                        <p className='jobDesc'> - Documented project-related expertise to build knowledge base for implementations.</p>
+                        <p className='jobDesc'> - Built product deliverables according to specifications and escalated technical design or specification issues.</p>
+                        <p className='jobDesc'> - Developed data migration and integration processes to legacy systems using identified development tools and technologies.</p>
+                        <p className='jobDesc'> - Developed moderately complex code based on business requirements or user stories.</p>
+                        <p className='jobDesc'> - Met project specifications with continuous oversight of software system installations and ongoing operation.</p>
                     </div>
                     <div className='job2'>
                         <h6>LiveShopper Sassie <span className='jobLength'>August 2021-July 2022 </span>IT/Support</h6>
-                        <p className='jobDesc'> - lorem ipsom</p>
-                        <p className='jobDesc'> - lorem ipsom</p>
-                        <p className='jobDesc'> - lorem ipsom</p>
-                        <p className='jobDesc'> - lorem ipsom</p>
+                        <p className='jobDesc'> - Created, maintained, and updated resource knowledge database for application issues mainly using PHP and SQL.</p>
+                        <p className='jobDesc'> - Identified opportunities to improve services through use of new products and technologies.</p>
+                        <p className='jobDesc'> - Managed multiple IT software projects simultaneously with correct technology resources and team involvement.</p>
+                        <p className='jobDesc'> - Worked in conjunction with IT team members on project integration and implementation with related testing.</p>
+                        <p className='jobDesc'> - Kept up to date on web developments and trends</p>
                     </div>
                     <div className='job3'>
                         <h6>Tri-County Furnitre Restoration <span className='jobLength'>October 2015-August 2021 </span>Woodworker</h6>
-                        <p className='jobDesc'> - lorem ipsom</p>
-                        <p className='jobDesc'> - lorem ipsom</p>
-                        <p className='jobDesc'> - lorem ipsom</p>
-                        <p className='jobDesc'> - lorem ipsom</p>
+                        <p className='jobDesc'> - Trimmed, sanded, and scraped surfaces and joints to prepare articles for finishing with precision.</p>
+                        <p className='jobDesc'> - Installed hardware such as hinges, handles, catches, or drawer pulls, using hand tools.</p>
+                        <p className='jobDesc'> - Set up and operated machines, including power saws, jointers, mortisers, tenoners, molders, and shapers.</p>
+                        <p className='jobDesc'> - Satisfied customers consistently, walking each through entire processes and quickly resolving any problems.</p>
+                        <p className='jobDesc'> - Completed all tasks promptly and with minimal oversight.</p>
                     </div>
                 </div>
                 <hr/>

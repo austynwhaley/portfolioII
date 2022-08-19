@@ -9,7 +9,7 @@ function Home() {
       <div className='homepage'>
         <div className='header'>
           <div className='headerContainer'>
-              <h1 className='hello'>Hello, I'm Austyn Whaley and I am a...</h1>
+              <h1 className='hello'>Hello world, I'm Austyn Whaley and I am a...</h1>
               <h2 className='typeTitle'> 
                   <TypeAnimation
                   className="cursor"
