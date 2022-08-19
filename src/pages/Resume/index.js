@@ -1,8 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { React, useState, useRef} from 'react';
 import '../Resume/style.css';
-import Overlay from 'react-bootstrap/Overlay';
-import Tooltip from 'react-bootstrap/Tooltip';
 import Button from 'react-bootstrap/Button';
 
 

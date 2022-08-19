@@ -2,7 +2,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import TypeAnimation from 'react-type-animation';
 import "./style.css"
 import React from 'react';
-import Card from "../../components/Card/Card"
 
 function Home() {
     return(
