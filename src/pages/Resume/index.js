@@ -2,7 +2,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { React, useState, useRef} from 'react';
 import '../Resume/style.css';
 import Button from 'react-bootstrap/Button';
-import { HashLink as Link } from 'react-router-hash-link'
 
 
 const Resume = () => {

@@ -14,3 +14,22 @@ iframe{
 h1{
     color: aliceblue;
 }
+
+.prj{
+    padding: 35px;
+    justify-content: center;
+}
+
+.prjDesc{
+    font-size: small;
+    font-style: italic;
+}
+.prjTech{
+    font-size: small;
+    font-style: italic;
+}
+
+.prjBtn{
+    width: 175px;
+    margin: 5px;
+}
