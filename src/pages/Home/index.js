@@ -17,7 +17,7 @@ function Home() {
                   wrapper="h1"
                   cursor={false}
                   sequence={[
-                      'Full Stack Develp',
+                      'Full Stack Develop',
                       500,
                       'Software Engin',
                       500,
