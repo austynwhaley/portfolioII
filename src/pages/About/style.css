@@ -5,3 +5,11 @@
 span {
     color: orange;
 }
+
+.links:hover{
+    color: orange;
+}
+
+.spacer{
+    color: aliceblue;
+}
