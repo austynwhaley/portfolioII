@@ -20,7 +20,7 @@ return(
                 <div className='bootProjs '>
                 <div className='prj'>
                         <h5 className='prjTitle d-flex justify-content-center'>MovieJamz</h5>
-                        <img className='prjImg rounded mx-auto d-block' src={movie} alt="laptop with app on screen"/>
+                        <img className='prjImg rounded mx-auto d-block img-fluid' src={movie} alt="laptop with app on screen"/>
                         <p className='prjDesc d-flex justify-content-center'>This application uses a two 3rd party api's to find movies and their soundtracks and gives you links to listen to the tracks</p>
                         <p className='prjTech d-flex justify-content-center'>Tech stack: Javascript, MySQL, Node.js, Express, Handlebars</p>
                         <div className='btns d-flex justify-content-center'>
@@ -34,7 +34,7 @@ return(
                     </div>
                     <div className='prj'>
                         <h5 className='prjTitle d-flex justify-content-center'>LibMaker 3000</h5>
-                        <img className='prjImg rounded mx-auto d-block' src={libmaker} alt="laptop with app on screen"/>
+                        <img className='prjImg rounded mx-auto d-block img-fluid' src={libmaker} alt="laptop with app on screen"/>
                         <p className='prjDesc d-flex justify-content-center'>This was project 2 in my bootcamp course it is a full front/back-end application that prompts templates and saves MadLibs!</p>
                         <p className='prjTech d-flex justify-content-center'>Tech stack: Javascript, MySQL, Node.js, Express, Handlebars</p>
                         <div className='btns d-flex justify-content-center'>
@@ -48,7 +48,7 @@ return(
                     </div>
                     <div className='prj'>
                         <h5 className='prjTitle d-flex justify-content-center'>Gainzz</h5>
-                        <img className='prjImg rounded mx-auto d-block' src={gainzz} alt="laptop with app on screen"/>
+                        <img className='prjImg rounded mx-auto d-block img-fluid' src={gainzz} alt="laptop with app on screen"/>
                         <p className='prjDesc d-flex justify-content-center'>Project 3 for course this is full front/back end application Gainzz is a workout tracking application</p>
                         <p className='prjTech d-flex justify-content-center'>Tech stack: Javascript, MySQL, Node.js, Express, Handlebars</p>
                         <div className='btns d-flex justify-content-center'>
