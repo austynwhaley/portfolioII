@@ -7,6 +7,7 @@ import movie from "../../images/IMG_2747.PNG"
 import Button from 'react-bootstrap/Button';
 
 
+
 const Projects = () => {
 
 return(
@@ -23,10 +24,10 @@ return(
                         <p className='prjDesc d-flex justify-content-center'>This application uses a two 3rd party api's to find movies and their soundtracks and gives you links to listen to the tracks</p>
                         <p className='prjTech d-flex justify-content-center'>Tech stack: Javascript, MySQL, Node.js, Express, Handlebars</p>
                         <div className='btns d-flex justify-content-center'>
-                            <Button className='prjBtn' variant='warning'>
-                                LibMaker 3000
+                            <Button className='prjBtn' variant='warning' href='https://austynwhaley.github.io/moviejamz/'>
+                                MovieJamz
                             </Button>
-                            <Button className='prjBtn' variant='warning'>
+                            <Button className='prjBtn' variant='warning' href='https://github.com/austynwhaley/moviejamz/tree/main'>
                                 GitHub Repo
                             </Button>
                         </div>
@@ -37,10 +38,10 @@ return(
                         <p className='prjDesc d-flex justify-content-center'>This was project 2 in my bootcamp course it is a full front/back-end application that prompts templates and saves MadLibs!</p>
                         <p className='prjTech d-flex justify-content-center'>Tech stack: Javascript, MySQL, Node.js, Express, Handlebars</p>
                         <div className='btns d-flex justify-content-center'>
-                            <Button className='prjBtn' variant='warning'>
+                            <Button className='prjBtn' variant='warning' href='https://makeyourmadlib.herokuapp.com/'>
                                 LibMaker 3000
                             </Button>
-                            <Button className='prjBtn' variant='warning'>
+                            <Button className='prjBtn' variant='warning' href='https://github.com/austynwhaley/make-your-madlibs'>
                                 GitHub Repo
                             </Button>
                         </div>
@@ -51,10 +52,11 @@ return(
                         <p className='prjDesc d-flex justify-content-center'>Project 3 for course this is full front/back end application Gainzz is a workout tracking application</p>
                         <p className='prjTech d-flex justify-content-center'>Tech stack: Javascript, MySQL, Node.js, Express, Handlebars</p>
                         <div className='btns d-flex justify-content-center'>
-                            <Button className='prjBtn' variant='warning'>
-                                LibMaker 3000
+                            <Button className='prjBtn' variant='warning' href='https://nameless-cliffs-75808.herokuapp.com/
+'>
+                                Gainzz
                             </Button>
-                            <Button className='prjBtn' variant='warning'>
+                            <Button className='prjBtn' variant='warning' href='https://github.com/austynwhaley/Gainzz'>
                                 GitHub Repo
                             </Button>
                         </div>
@@ -62,6 +64,7 @@ return(
                 </div>
             </div>
             <hr/>
+            <h3>3D Modeling</h3>
             <div className='turkModel d-flex justify-content-center'>
                 <iframe title="Turk" height='500' width='500'  frameborder="0"  src="https://sketchfab.com/models/02f3b844a948482d80518e3803d79a2b/embed?autospin=1&autostart=1"> </iframe>
             </div>
