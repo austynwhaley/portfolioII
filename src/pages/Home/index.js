@@ -23,7 +23,7 @@ function Home() {
                       500,
                       "Web Dev",
                       500,
-                      'Desinger',
+                      'Designer',
                       1500,
                       'Creator',
                       1500,
