@@ -33,6 +33,9 @@ const Resume = () => {
     {id: 22, title: 'Heroku', variant: 'dark'},
     {id: 23, title: 'JSX', variant: 'warning'},
     {id: 24, title: "Next.js", variant: 'dark'},
+    {id: 25, title: "Unreal Engine", variant: 'dark'},
+    {id: 26, title: "Unity", variant: 'dark'},
+    {id: 27, title: "Solidity", variant: 'dark'},
   ]
 
   const handleClick = () => {
