@@ -1,8 +1,8 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../Navbar/Navbar.css";
 import React from "react";
 import { HashLink as Link } from 'react-router-hash-link'
-
 const Navbar = (props) => {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
@@ -20,7 +20,7 @@ const Navbar = (props) => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-  
+
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav ml-auto">
             <li className={`nav-item ${props.status}`}>
@@ -39,7 +39,7 @@ const Navbar = (props) => {
               </Link>
             </li>
             <li className="nav-item dropdown">
-              
+
               <div
                 className="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
