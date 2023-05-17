@@ -28,7 +28,7 @@ const Resume = () => {
     {id: 17, title: 'VS/VS Code', variant: 'warning'},
     {id: 18, title: 'DBeaver', variant: 'warning'},
     {id: 19, title: 'AWS', variant: 'warning'},
-    {id: 20, title: 'Typescript', variant: 'dark'},
+    {id: 20, title: 'Typescript', variant: 'warning'},
     {id: 21, title: 'PHP', variant: 'dark'},
     {id: 22, title: 'Heroku', variant: 'dark'},
     {id: 23, title: 'JSX', variant: 'warning'},

@@ -3,7 +3,7 @@ import TypeAnimation from 'react-type-animation';
 import "./style.css"
 import React from 'react';
 
-function Home() {
+const Home = () => {
     return(
 
       <div className='homepage'>
@@ -37,7 +37,6 @@ function Home() {
               </h2>
           </div>
         </div>
-        
       </div>
     )
 }
