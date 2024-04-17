@@ -5,6 +5,9 @@
 span {
     color: orange;
 }
+.links{
+    
+}
 
 .links:hover{
     color: orange;
@@ -12,6 +15,7 @@ span {
 
 .spacer{
     color: aliceblue;
+    margin-top: 40px;
 }
 .p{
     font-size: 1.4rem;

@@ -1,0 +1,22 @@
+.circle-icon {
+    width: 70px; /* Set the width of the circle */
+    height: 70px; /* Set the height of the circle */
+    border-radius: 50%; /* Make it a circle by setting border-radius to 50% */
+    overflow: hidden; /* Hide overflowing parts of the image */
+    float: left;
+    margin-right: 25px;
+    cursor: pointer; /* Add cursor pointer for clickability */
+    transition: all 0.3s ease; /* Smooth transition for size change */
+  }
+  
+  .icon-img {
+    width: 100%; /* Make the image fill the circle */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .circle-icon.expanded {
+    width: 240px; /* Double the width for expansion */
+    height: 240px; /* Double the height for expansion */
+    margin-right: 50px; /* Adjust margin for expanded size */
+  }
+  

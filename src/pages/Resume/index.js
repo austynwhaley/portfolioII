@@ -36,6 +36,7 @@ const Resume = () => {
     {id: 25, title: "Unreal Engine", variant: 'dark'},
     {id: 26, title: "Unity", variant: 'dark'},
     {id: 27, title: "Solidity", variant: 'dark'},
+    {id: 28, title: 'GraphQL', variant: 'warning'},
   ]
 
   const handleClick = () => {
@@ -128,7 +129,7 @@ return(
         </div>
         <div className='downloadPdf'>
             <Button className='customPdf' variant='dark' ref={target} onClick={() => setShow(!show)}>
-                <a href="/Resume-08-19.pdf" download>
+                <a href="/Resume-04-16.pdf" download>
                     Download Resume
                 </a>
             </Button>
