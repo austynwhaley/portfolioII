@@ -85,7 +85,7 @@ return(
                 <div className='xpCont'>
                     <h5>Experience</h5>
                     <div className='job1'>
-                        <h6>Fischer Homes <span className='jobLength'>July 2022-Present </span>Applications Developer</h6>
+                        <h6>Fischer Homes <span className='jobLength'>July 2022-April 2024 </span>Software Engineer</h6>
                         <p className='jobDesc'> - Designed, developed and tested applications in alignment with company coding and quality standards.</p>
                         <p className='jobDesc'> - Conducted robust unit testing to verify deliverables match design requirements.</p>
                         <p className='jobDesc'> - Documented project-related expertise to build a knowledge base for implementations.</p>
