@@ -19,11 +19,11 @@ const Resume = () => {
     {id: 8, title: 'MongoDB', variant: 'dark'},
     {id: 9, title: 'Sequelize', variant: 'warning'},
     {id: 10, title: 'Microsoft SQL', variant: 'warning'},
-    {id: 11, title: 'Vue.js', variant: 'dark'},
+    {id: 11, title: 'Vue.js', variant: 'warning'},
     {id: 12, title: 'C++', variant: 'dark'},
     {id: 13, title: 'C/C#', variant: 'dark'},
     {id: 14, title: 'Docker', variant: 'warning'},
-    {id: 15, title: 'Apache', variant: 'dark'},
+    {id: 15, title: 'Bitbucket', variant: 'warning'},
     {id: 16, title: 'Git', variant: 'warning'},
     {id: 17, title: 'VS/VS Code', variant: 'warning'},
     {id: 18, title: 'DBeaver', variant: 'warning'},
@@ -33,10 +33,12 @@ const Resume = () => {
     {id: 22, title: 'Heroku', variant: 'dark'},
     {id: 23, title: 'JSX', variant: 'warning'},
     {id: 24, title: "Next.js", variant: 'dark'},
-    {id: 25, title: "Unreal Engine", variant: 'dark'},
-    {id: 26, title: "Unity", variant: 'dark'},
-    {id: 27, title: "Solidity", variant: 'dark'},
-    {id: 28, title: 'GraphQL', variant: 'warning'},
+    {id: 25, title: 'Agile', variant: 'warning'},
+    {id: 26, title: "Unreal Engine", variant: 'dark'},
+    {id: 27, title: "Unity", variant: 'dark'},
+    {id: 28, title: "Solidity", variant: 'dark'},
+    {id: 29, title: 'GraphQL', variant: 'warning'},
+    {id: 30, title: 'LinuxOS', variant: 'warning'},
   ]
 
   const handleClick = () => {
@@ -86,13 +88,13 @@ return(
                     <h5>Experience</h5>
                     <div className='job1'>
                         <h6>Fischer Homes <span className='jobLength'>July 2022-April 2024 </span>Software Engineer</h6>
-                        <p className='jobDesc'> - Designed, developed and tested applications in alignment with company coding and quality standards.</p>
-                        <p className='jobDesc'> - Conducted robust unit testing to verify deliverables match design requirements.</p>
-                        <p className='jobDesc'> - Documented project-related expertise to build a knowledge base for implementations.</p>
-                        <p className='jobDesc'> - Built product deliverables according to specifications and escalated technical design or specification issues.</p>
-                        <p className='jobDesc'> - Developed data migration and integration processes to legacy systems using identified development tools and technologies.</p>
+                        <p className='jobDesc'> - Built product deliverables according to specifications and escalated technical design with technologies such as JavaScript, Typescript, React.js, Vue.js.</p>
+                        <p className='jobDesc'> - Designed, developed and tested applications in alignment with company coding and quality standards all within the Agile framework and Git workflow.</p>
+                        <p className='jobDesc'> - Conducted unit testing in development environments to verify deliverables match design requirements with Jest framework and some automation with Selenium</p>
+                        <p className='jobDesc'> - Developed data migration and integration processes to legacy systems using identified development tools and technologies such as MicrosoftSQL Server, GraphQL and Sequelize</p>
                         <p className='jobDesc'> - Developed moderately complex code based on business requirements or user stories.</p>
-                        <p className='jobDesc'> - Met project specifications with continuous oversight of software system installations and ongoing operation.</p>
+                        <p className='jobDesc'> - Met project specifications with continuous oversight of software system installations and ongoing operation while maintaining servers hosted on AWS.</p>
+                        <p className='jobDesc'> - Documented project-related expertise to build a knowledge base for implementations using Atlassian Confluence.</p>
                     </div>
                     <div className='job2'>
                         <h6>LiveShopper Sassie <span className='jobLength'>August 2021-July 2022 </span>IT/Support</h6>
