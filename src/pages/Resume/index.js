@@ -54,7 +54,7 @@ return(
             <div className='resumeBody'>
                 <div className='bio'>
                     <h2 className='name'>Austyn R. Whaley</h2>
-                    <p>1012 Taylor Ave. Bellevue KY, 41073 | (859)-905-7745 | austyn_whaley@yahoo.com</p>
+                    <p>Bellevue, KY | (859)-905-7745 | austyn_whaley@yahoo.com</p>
                 </div>
                 <hr/>
                 <div className='summary'>

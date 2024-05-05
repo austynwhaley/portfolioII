@@ -4,6 +4,7 @@ import '../Projects/style.css';
 import libmaker from "../../images/IMG_2748.PNG"
 import gainzz from "../../images/IMG_2749.PNG"
 import movie from "../../images/IMG_2747.PNG"
+import umarine from "../../images/umarine.gif"
 import Button from 'react-bootstrap/Button';
 
 
@@ -16,6 +17,26 @@ return(
             <h1>Projects</h1>
             <hr/>
             <div>
+                <h3>Game Dev</h3>
+                <div className='prj'>
+                <h5 className='prjTitle d-flex justify-content-center'>UltraMarine</h5>
+                    <img className='prjImg rounded mx-auto d-block img-fluid' src={umarine} alt="gif of demo"/>
+                    <div className='prjm'>
+                        <p className='prjDesc d-flex justify-content-center'>Here is a small clip of a 2D gunner platformer based off of Warhemmer 40k.</p>
+                        <p className='prjDesc d-flex justify-content-center'>I built this solo in Unity using C# scripts</p>
+                        <p className='prjDesc d-flex justify-content-center'>Full demo coming soon!!</p>
+                    </div>
+                </div>
+                <hr/>
+                <h3>3D Modeling</h3>
+                <div className='turkModel d-flex justify-content-center'>
+                    <iframe title="Turk" height='500' width='500'  frameborder="0"  src="https://sketchfab.com/models/02f3b844a948482d80518e3803d79a2b/embed?autospin=1&autostart=1"> </iframe>
+                </div>
+                <div className='prjm'>
+                        <p className='prjDesc d-flex justify-content-center'>Here is a 3D model I crafted in ZBrush, along with other assets, for a game project in Unreal Engine. His name is Turk!</p>
+                        <p className='prjDesc d-flex justify-content-center'>The game is still in production, with collaboration from others. It's being built using Unreal Blueprints and C++ scripting.</p>
+                    </div>
+                <hr/>
                 <h3>Coding Bootcamp Projects</h3>
                 <div className='bootProjs '>
                 <div className='prj'>
@@ -62,11 +83,6 @@ return(
                         </div>
                     </div>
                 </div>
-            </div>
-            <hr/>
-            <h3>3D Modeling</h3>
-            <div className='turkModel d-flex justify-content-center'>
-                <iframe title="Turk" height='500' width='500'  frameborder="0"  src="https://sketchfab.com/models/02f3b844a948482d80518e3803d79a2b/embed?autospin=1&autostart=1"> </iframe>
             </div>
         </div>
     </div>
