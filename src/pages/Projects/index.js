@@ -22,7 +22,7 @@ return(
                 <h5 className='prjTitle d-flex justify-content-center'>UltraMarine</h5>
                     <img className='prjImg rounded mx-auto d-block img-fluid' src={umarine} alt="gif of demo"/>
                     <div className='prjm'>
-                        <p className='prjDesc d-flex justify-content-center'>Here is a small clip of a 2D gunner platformer based off of Warhemmer 40k.</p>
+                        <p className='prjDesc d-flex justify-content-center'>Here is a small clip of a 2D gunner platformer based off of Warhammer 40k.</p>
                         <p className='prjDesc d-flex justify-content-center'>I built this solo in Unity using C# scripts</p>
                         <p className='prjDesc d-flex justify-content-center'>Full demo coming soon!!</p>
                     </div>
