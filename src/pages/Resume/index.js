@@ -17,16 +17,16 @@ const Resume = () => {
     {id: 6, title: 'Express/npm', variant: 'warning'},
     {id: 7, title: 'SQL', variant: 'warning'},
     {id: 8, title: 'MongoDB', variant: 'dark'},
-    {id: 9, title: 'Sequelize', variant: 'warning'},
+    {id: 9, title: 'Sequelize', variant: 'dark'},
     {id: 10, title: 'Microsoft SQL', variant: 'warning'},
     {id: 11, title: 'Vue.js', variant: 'warning'},
     {id: 12, title: 'C++', variant: 'dark'},
-    {id: 13, title: 'C/C#', variant: 'dark'},
+    {id: 13, title: 'C/C#', variant: 'warning'},
     {id: 14, title: 'Docker', variant: 'warning'},
     {id: 15, title: 'Bitbucket', variant: 'warning'},
     {id: 16, title: 'Git', variant: 'warning'},
     {id: 17, title: 'VS/VS Code', variant: 'warning'},
-    {id: 18, title: 'DBeaver', variant: 'warning'},
+    {id: 18, title: 'Python', variant: 'dark'},
     {id: 19, title: 'AWS', variant: 'warning'},
     {id: 20, title: 'Typescript', variant: 'warning'},
     {id: 21, title: 'PHP', variant: 'dark'},
@@ -35,10 +35,11 @@ const Resume = () => {
     {id: 24, title: "Next.js", variant: 'dark'},
     {id: 25, title: 'Agile', variant: 'warning'},
     {id: 26, title: "Unreal Engine", variant: 'dark'},
-    {id: 27, title: "Unity", variant: 'dark'},
+    {id: 27, title: "Unity", variant: 'warning'},
     {id: 28, title: "Solidity", variant: 'dark'},
-    {id: 29, title: 'GraphQL', variant: 'warning'},
+    {id: 29, title: 'GraphQL', variant: 'dark'},
     {id: 30, title: 'LinuxOS', variant: 'warning'},
+    {id: 31, title: 'Blender', variant: 'warning'},
   ]
 
   const handleClick = () => {
@@ -59,13 +60,14 @@ return(
                 <hr/>
                 <div className='summary'>
                     <h5>Professional Summary</h5>
-                    <p>I am a dedicated and adaptable employee who successfully handles fast paced work environments.</p>
-                    <p>Proven willingness to take on any task to support the team and help the company succeed</p>
-                    <p>Offers strong time management and problem solving abilities</p>
+                    <p>A dedicated and adaptable engineer that demonstrates a strong willingness to tackle diverse tasks to support team success and drive company growth. Offers exceptional time management and problem-solving skills, consistently contributing to organizational efficiency. Passionate about continuous learning and eager to explore and implement new technologies to stay at the forefront of industry advancements.</p>
                 </div>
                 <hr/>
                 <div className='skillz'>
                     <h5>Skills</h5>
+                    <div className='techDesc'>
+                        <span className='jobLength' variant='warning' ref={target} onClick={() => setShow(!show)}>The highlighted technologies are what I'm currently using day to day as a tech stack professionally and recreationally</span>
+                    </div>
                     <div className='skOption'>
                         {lists.map((list) => (
                             <Button
@@ -80,13 +82,18 @@ return(
                         ))}
                     </div>
                 </div>
-                <div className='techDesc'>
-                    <Button className='customDesc' variant='warning' ref={target} onClick={() => setShow(!show)}>The highlighted technologies are what I'm using currently as a tech stack</Button>
-                </div>
                 <hr/>
                 <div className='xpCont'>
                     <h5>Experience</h5>
                     <div className='job1'>
+                        <h6>Treplacon Studio [Freelance] <span className='jobLength'>May 2024-Present </span>Game Engineer</h6>
+                        <p className='jobDesc'> - As a member of a five-person indie development team, I have played a crucial role in building a Unity-based game using C# and Photon Network packages.</p>
+                        <p className='jobDesc'> - Developed core game systems like spawning mechanics and UI/UX logic, along with rigid body systems and network based communication between players for several share game mechanics</p>
+                        <p className='jobDesc'> - Collaborating closely with fellow developers, artists and audio engineers to debug and optimize performance, and implementing key game features to enhance the player experience.</p>
+                        <p className='jobDesc'> - Create assets like prefabs, FBX objects and animations via Blender.</p>
+                        <p className='jobDesc'> - This role has honed my Unity development skills and allowed me to contribute to a highly collaborative and innovative gaming project.</p>
+                    </div>
+                    <div className='job2'>
                         <h6>Fischer Homes <span className='jobLength'>July 2022-April 2024 </span>Software Engineer</h6>
                         <p className='jobDesc'> - Built product deliverables according to specifications and escalated technical design with technologies such as JavaScript, Typescript, React.js, Vue.js.</p>
                         <p className='jobDesc'> - Designed, developed and tested applications in alignment with company coding and quality standards all within the Agile framework and Git workflow.</p>
@@ -96,21 +103,13 @@ return(
                         <p className='jobDesc'> - Met project specifications with continuous oversight of software system installations and ongoing operation while maintaining servers hosted on AWS.</p>
                         <p className='jobDesc'> - Documented project-related expertise to build a knowledge base for implementations using Atlassian Confluence.</p>
                     </div>
-                    <div className='job2'>
+                    <div className='job3'>
                         <h6>LiveShopper Sassie <span className='jobLength'>August 2021-July 2022 </span>IT/Support</h6>
                         <p className='jobDesc'> - Created, maintained, and updated resource knowledge database for application issues mainly using PHP and SQL.</p>
                         <p className='jobDesc'> - Identified opportunities to improve services through use of new products and technologies.</p>
                         <p className='jobDesc'> - Managed multiple IT software projects simultaneously with correct technology resources and team involvement.</p>
                         <p className='jobDesc'> - Worked in conjunction with IT team members on project integration and implementation with related testing.</p>
                         <p className='jobDesc'> - Kept up to date on web developments and trends</p>
-                    </div>
-                    <div className='job3'>
-                        <h6>Tri-County Furniture Restoration <span className='jobLength'>October 2015-August 2021 </span>Woodworker</h6>
-                        <p className='jobDesc'> - Trimmed, sanded, and scraped surfaces and joints to prepare articles for finishing with precision.</p>
-                        <p className='jobDesc'> - Installed hardware such as hinges, handles, catches, or drawer pulls, using hand tools.</p>
-                        <p className='jobDesc'> - Set up and operate machines, including power saws, jointers, mortisers, tenoners, molders, and shapers.</p>
-                        <p className='jobDesc'> - Satisfied customers consistently, walking each through entire processes and quickly resolving any problems.</p>
-                        <p className='jobDesc'> - Completed all tasks promptly and with minimal oversight.</p>
                     </div>
                 </div>
                 <hr/>
@@ -131,7 +130,7 @@ return(
         </div>
         <div className='downloadPdf'>
             <Button className='customPdf' variant='dark' ref={target} onClick={() => setShow(!show)}>
-                <a href="/Resume-04-16.pdf" download>
+                <a href="/Resume_8_13.pdf" download>
                     Download Resume
                 </a>
             </Button>

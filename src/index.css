@@ -2,8 +2,14 @@
 
 body {
   background-image: url("./images/IMG_0628.jpg");
-  background-size:     cover;                      /* <------ */
+  background-size: cover;                      /* Ensures the background covers the entire viewport */
   background-attachment: fixed;
-  background-position: center center;      
- 
+  background-position: center center; 
+  overflow: auto;  /* Allows scrolling */
+  scrollbar-width: none;  /* Hides scrollbar in Firefox */
+}
+
+body::-webkit-scrollbar {
+  width: 0;  /* Hides scrollbar in Chrome, Safari, and other WebKit-based browsers */
+  background: transparent;  /* Optional: hides scrollbar track */
 }

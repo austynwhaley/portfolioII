@@ -5,6 +5,7 @@ import libmaker from "../../images/IMG_2748.PNG"
 import gainzz from "../../images/IMG_2749.PNG"
 import movie from "../../images/IMG_2747.PNG"
 import umarine from "../../images/umarine.gif"
+import darkdiv from "../../images/darkdivlogo.png"
 import Button from 'react-bootstrap/Button';
 
 
@@ -18,6 +19,19 @@ return(
             <hr/>
             <div>
                 <h3>Game Dev</h3>
+                <div className='prj'>
+                <h5 className='prjTitle d-flex justify-content-center'>Dark Division</h5>
+                    <img className='prjImg rounded mx-auto d-block img-fluid ddivision' src={darkdiv} alt="demo"/>
+                    <div className='prjm'>
+                        <p className='prjDesc d-flex justify-content-center'>This is a project I have been working on at Treplacon Studios</p>
+                        <p className='prjDesc d-flex justify-content-center'>This is built in Unity using C# scripts and assests and animations created in Blender</p>
+                        <div className='btns d-flex justify-content-center'>
+                            <Button className='prjBtn' variant='warning' href='https://www.youtube.com/watch?v=RQkLqoK_2ow&t=3s'>
+                                Video Demo
+                            </Button>
+                        </div>
+                    </div>
+                </div>
                 <div className='prj'>
                 <h5 className='prjTitle d-flex justify-content-center'>UltraMarine</h5>
                     <img className='prjImg rounded mx-auto d-block img-fluid' src={umarine} alt="gif of demo"/>
@@ -59,9 +73,6 @@ return(
                         <p className='prjDesc d-flex justify-content-center'>This was project 2 in my bootcamp course it is a full front/back-end application that prompts templates and saves MadLibs!</p>
                         <p className='prjTech d-flex justify-content-center'>Tech stack: Javascript, MongoDB, Node.js, Express, Handlebars, bootstrap</p>
                         <div className='btns d-flex justify-content-center'>
-                            <Button className='prjBtn' variant='warning' href='https://makeyourmadlib.herokuapp.com/'>
-                                LibMaker 3000
-                            </Button>
                             <Button className='prjBtn' variant='warning' href='https://github.com/austynwhaley/make-your-madlibs'>
                                 GitHub Repo
                             </Button>
@@ -73,10 +84,6 @@ return(
                         <p className='prjDesc d-flex justify-content-center'>Project 3 for course this is full front/back end application Gainzz is a workout tracking application</p>
                         <p className='prjTech d-flex justify-content-center'>Tech stack: Javascript, MySQL, Node.js, Express, React.js, bootstrap</p>
                         <div className='btns d-flex justify-content-center'>
-                            <Button className='prjBtn' variant='warning' href='https://nameless-cliffs-75808.herokuapp.com/
-'>
-                                Gainzz
-                            </Button>
                             <Button className='prjBtn' variant='warning' href='https://github.com/austynwhaley/Gainzz'>
                                 GitHub Repo
                             </Button>

@@ -14,6 +14,21 @@ iframe{
 h1{
     color: aliceblue;
 }
+.ddivision {
+    width: 100%;  /* Ensure it takes full width of the container */
+    max-width: 450px;  /* Limit the maximum width to 450px */
+    height: auto;  /* Adjust height to maintain aspect ratio */
+    display: block;  /* Remove any inline display issues */
+    margin: 0 auto;  /* Center the image horizontally */
+}
+
+@media (max-width: 768px) {
+    .ddivision {
+        max-width: 100%;  /* Ensure it doesn’t exceed the container width on mobile */
+        height: auto;  /* Maintain aspect ratio on smaller screens */
+    }
+}
+
 
 .prj{
     padding: 35px;
@@ -32,6 +47,7 @@ h1{
 .prjBtn{
     width: 175px;
     margin: 5px;
+    justify-content: center;
 }
 
 .prjm {

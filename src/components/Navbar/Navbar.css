@@ -9,3 +9,15 @@ body{
   font-family: 'Open Sans', sans-serif;
   font-family: 'Roboto Mono', monospace
 }
+.navbar-brand{
+  margin-left: 1%;
+}
+.update {
+  font-size: x-small;
+  font-style: italic;
+  color: orange;
+  float: right;
+}
+.navbar-toggler{
+  margin-right: 2%;
+}
