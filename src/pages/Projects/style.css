@@ -1,3 +1,7 @@
+body::-webkit-scrollbar {
+    display: none;
+  }
+
 .projectsCont{
     margin-top: 8%;
     width: 100%;

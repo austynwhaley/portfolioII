@@ -4,6 +4,10 @@ body{
   background-color: rgba(221,221,221,255);
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .headerContainer{
   margin: auto;
   margin-top: 2%;

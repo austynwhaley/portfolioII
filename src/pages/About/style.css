@@ -5,8 +5,8 @@
 span {
     color: orange;
 }
-.links{
-    
+body::-webkit-scrollbar {
+    display: none;
 }
 
 .links:hover{
