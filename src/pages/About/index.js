@@ -41,8 +41,6 @@ const About = () => {
                     I lacked confidence in pursuing it and had no guidance. However, in 2020, I finally took the plunge and enrolled in a <span>Full Stack Engineering </span> 
                     program offered by <span>The Ohio State University</span>. That decision marked the beginning of my career journey.</p>
 
-                {/* <p>I currently I work at <span>Fischer Homes</span> on the development team as an <span>Software Engineer</span>.</p> */}
-
                 <p> I have a wide range of development interests from standard Frontend|Backend Web Application development with <span>MERN</span>, <span>MEVN</span>, <span>MEAN</span> tech stacks,
                  to <span>AI</span> and <span>Web3</span> development and <span>Machine Learning</span>, and even to game development with <span>Unreal</span> and <span>Unity</span>.</p>
 

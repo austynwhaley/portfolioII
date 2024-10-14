@@ -1,12 +1,17 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { React } from 'react';
 import '../Projects/style.css';
+import Button from 'react-bootstrap/Button';
+
+// images for projs
 import libmaker from "../../images/IMG_2748.PNG"
 import gainzz from "../../images/IMG_2749.PNG"
 import movie from "../../images/IMG_2747.PNG"
 import umarine from "../../images/umarine.gif"
 import darkdiv from "../../images/darkdivlogo.png"
-import Button from 'react-bootstrap/Button';
+import amrbetz from "../../images/amrbets.png"
+import bellb from "../../images/bellb.png"
+
 
 
 
@@ -18,6 +23,37 @@ return(
             <h1>Projects</h1>
             <hr/>
             <div>
+                <h3>Web Apps</h3>
+                <div className='prj'>
+                <h5 className='prjTitle d-flex justify-content-center'>AMRBETZ</h5>
+                    <img className='prjImg rounded mx-auto d-block img-fluid ddivision' src={amrbetz} alt="twtter"/>
+                    <div className='prjm'>
+                        <p className='prjDesc d-flex justify-content-center'>This is a project I created as a goofy/fun learning experience</p>
+                        <p className='prjDesc d-flex justify-content-center'>This project is built with Python 3.11 and Tweepy, utilizing the Twitter API.</p>
+                        <p className='prjDesc d-flex justify-content-center'> It scrapes statistics from all 32 NFL teams and calculates weekly average stats.</p>
+                        <p className='prjDesc d-flex justify-content-center'> The data is intended to be used as a reference for building player prop bets.</p>
+                        <div className='btns d-flex justify-content-center'>
+                            <Button className='prjBtn' variant='warning' href='https://x.com/amrbetz'>
+                                Twitter Account
+                            </Button>
+                            <Button className='prjBtn' variant='warning' href='https://github.com/austynwhaley/amrbetz'>
+                                GitHub Repo
+                            </Button>
+                        </div>
+                    </div>
+                </div>
+                <div className='prj'>
+                        <h5 className='prjTitle d-flex justify-content-center'>Bellevue Barbershop</h5>
+                        <img className='prjImg rounded mx-auto d-block img-fluid' src={bellb} alt="laptop with app on screen"/>
+                        <p className='prjDesc d-flex justify-content-center'>This is a simple React app I created as freelance work for a local barber shop.</p>
+                        <p className='prjTech d-flex justify-content-center'>Customer requested the theme of the site to have a windows 98 vibe on the site</p>
+                        <div className='btns d-flex justify-content-center'>
+                            <Button className='prjBtn' variant='warning' href='https://austynwhaley.github.io/bellevuebarbershop/#/'>
+                                Bellevue Barbershop
+                            </Button>
+                        </div>
+                    </div>
+                <hr/>
                 <h3>Game Dev</h3>
                 <div className='prj'>
                 <h5 className='prjTitle d-flex justify-content-center'>Dark Division</h5>
@@ -53,7 +89,7 @@ return(
                 <hr/>
                 <h3>Coding Bootcamp Projects</h3>
                 <div className='bootProjs '>
-                <div className='prj'>
+                    <div className='prj'>
                         <h5 className='prjTitle d-flex justify-content-center'>MovieJamz</h5>
                         <img className='prjImg rounded mx-auto d-block img-fluid' src={movie} alt="laptop with app on screen"/>
                         <p className='prjDesc d-flex justify-content-center'>This application uses a two 3rd party api's to find movies and their soundtracks and gives you links to listen to the tracks</p>
