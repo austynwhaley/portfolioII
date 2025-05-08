@@ -9,7 +9,7 @@ const Navbar = (props) => {
         <a className="navbar-brand" href="/">
           A|W
         </a>
-        <span className='update'>Last updated: 10/14/2024 </span>
+        <span className='update'>Last updated: 05/07/2025 </span>
         <button
           className="navbar-toggler"
           type="button"
