@@ -1,26 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@700&display=swap');
-body{
-  /* background-color: #282c34; */
-  background-color: rgba(221,221,221,255);
+.typeTitle {
+  color: aliceblue;
+  font-size: clamp(18px, 4.5vw, 32px);
+  min-height: 2.8em;
+  overflow-wrap: anywhere;
 }
 
-body::-webkit-scrollbar {
-  display: none;
+.homepage {
+  padding-inline: 1rem;
 }
 
 .headerContainer{
   margin: auto;
   margin-top: 2%;
-  width: 58%;
-  background-color:  #212529;
-  padding: 10px;
+  width: min(60%, 100%);
+  background-color: #212529;
+  padding: 12px 16px;
   border-radius: 15px;
   color: aliceblue;
-  
 }
 
-.header{
-  margin-bottom: 10%;
+.home-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
 .cursor{
@@ -38,42 +41,19 @@ body::-webkit-scrollbar {
   }
 }
 
-.links{
-  color: aliceblue;
-}
-
-a:hover{
-  color: orange;
-}
-a{
-  color: aliceblue;
-}
-
-.toolkit{
-  color: aliceblue;
-}
-
-
-.home-links {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
+/* Buttons */
 .home-link {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   padding: 0.6rem 1.2rem;
   color: aliceblue;
-  background-color:  #212529;
+  background-color: #212529;
   text-decoration: none;
   border: 1px solid rgba(255,255,255,0.3);
   border-radius: 6px;
   transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
 }
-
 .home-link:hover {
   background: rgba(255,255,255,0.1);
   border-color: rgba(255,255,255,0.6);
@@ -82,29 +62,42 @@ a{
   text-decoration: none;
 }
 
-.icon {
-  font-size: 1.2rem;
+@media (max-width: 768px) {
+  .header {
+    margin-bottom: 2.5rem;
+  }
+
+  .headerContainer {
+    width: 100%;
+    padding: 14px 16px;
+  }
+
+  .home-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .home-link {
+    width: auto;
+    min-width: 160px;
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .icon { font-size: 1.1rem; }
 }
 
 .highlight {
   background-image: linear-gradient(90deg, orange 50%, aliceblue 50%);
-  background-size: 200% 100%;      /* makes the strip twice as wide */
-  background-position: right;       /* start fully on the aliceblue half */
+  background-size: 200% 100%;
+  background-position: right;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: sweepHighlight 1.2s ease forwards;
 }
 
-@keyframes sweepHighlight {
-  to {
-    background-position: left;     /* slide to reveal orange left→right */
-  }
-}
-
-/* Optional: respect reduced motion */
+@keyframes sweepHighlight { to { background-position: left; } }
 @media (prefers-reduced-motion: reduce) {
-  .highlight {
-    animation: none;
-    background-image: linear-gradient(90deg, orange, orange);
-  }
+  .highlight { animation: none; background-image: linear-gradient(90deg, orange, orange); }
 }

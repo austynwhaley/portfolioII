@@ -22,8 +22,8 @@ const Home = () => {
               <TypeAnimation
                 className="cursor"
                 wrapper="span"
-                cursor={true}
-                repeat={1} // run once
+                cursor={false}
+                repeat={1}
                 sequence={[
                   "Hello world, I'm Austyn Whaley and I am a Full Stack Develop", 500,
                   "Hello world, I'm Austyn Whaley and I am a Software En", 500,
