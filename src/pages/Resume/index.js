@@ -59,7 +59,7 @@ return(
             <div className='resumeBody'>
                 <div className='bio'>
                     <h2 className='name'>Austyn R. Whaley</h2>
-                    <p>Bellevue, KY | (859)-905-7745 | austyn_whaley@yahoo.com</p>
+                    <p>Bellevue, KY | (859)-905-7745 | mail@austynwhaley.com</p>
                 </div>
                 <hr/>
                 <div className='summary'>
@@ -144,7 +144,7 @@ return(
         </div>
         <div className='downloadPdf'>
             <Button className='customPdf' variant='dark' ref={target} onClick={() => setShow(!show)}>
-                <a href="/Resume_8_13.pdf" download>
+                <a href="/Resume.pdf" download>
                     Download Resume
                 </a>
             </Button>

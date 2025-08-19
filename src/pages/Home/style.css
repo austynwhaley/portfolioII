@@ -24,7 +24,7 @@ body::-webkit-scrollbar {
 }
 
 .cursor{
-  color: orange;
+  color: rgb(255, 255, 255);
 }
 
 .cursor::after {
@@ -54,3 +54,57 @@ a{
 }
 
 
+.home-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.home-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  color: aliceblue;
+  background-color:  #212529;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 6px;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+}
+
+.home-link:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0.6);
+  color: orange;
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.icon {
+  font-size: 1.2rem;
+}
+
+.highlight {
+  background-image: linear-gradient(90deg, orange 50%, aliceblue 50%);
+  background-size: 200% 100%;      /* makes the strip twice as wide */
+  background-position: right;       /* start fully on the aliceblue half */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: sweepHighlight 1.2s ease forwards;
+}
+
+@keyframes sweepHighlight {
+  to {
+    background-position: left;     /* slide to reveal orange left→right */
+  }
+}
+
+/* Optional: respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .highlight {
+    animation: none;
+    background-image: linear-gradient(90deg, orange, orange);
+  }
+}
