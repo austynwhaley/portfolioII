@@ -14,7 +14,7 @@ const Navbar = (props) => {
       <a className="navbar-brand" href="/">
         A|W
       </a>
-      <span className='update'>Last updated: 08/20/2025 </span>
+      <span className='update'>Last updated: 03/24/2026 </span>
 
       {/* Hide hamburger button if on home page */}
       {!onHomePage && (

@@ -4,6 +4,7 @@ import "./style.css";
 import React, { useState } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import { FaUser, FaProjectDiagram, FaFileAlt } from 'react-icons/fa';
+import Chatbot from '../../components/Chatbot/Chatbot';
 
 const Home = () => {
   const [colorized, setColorized] = useState(false);
@@ -51,6 +52,11 @@ const Home = () => {
             <FaFileAlt className="icon" /> Resume
           </Link>
         </div>
+      </div>
+
+      {/* AI Chatbot Section */}
+      <div className="chatbot-section">
+        <Chatbot />
       </div>
     </div>
   );
