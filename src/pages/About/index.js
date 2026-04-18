@@ -1,66 +1,45 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "./style.css"
 import React from 'react';
-import CircleIcon from '../../components/CircleIcon/CircleIcon';
-
-const calculateAge = (birthday) => {
-  const birthDate = new Date(birthday);
-  const today = new Date();
-  
-  let age = today.getFullYear() - birthDate.getFullYear();
-  const monthDiff = today.getMonth() - birthDate.getMonth();
-  
-  if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
-    age--;
-  }
-  
-  return age;
-}
-
-const birthday = new Date(1994, 8, 20);
-const age = calculateAge(birthday);
-
+import { PORTFOLIO } from '../../data/portfolio';
 
 const About = () => {
-    return(
+  return (
+    <div className="page page-fade about-page" data-screen-label="about">
+      <div className="about-copy">
+        <div className="eyebrow"><span className="num">01</span>About</div>
+        <h2 className="section-title">From sawdust to source.</h2>
+        <p>I'm <strong>Austyn Whaley</strong>, a full-stack engineer in <span className="hl">Bellevue, KY</span>, just across the river from Cincinnati. I'm {PORTFOLIO.age}.</p>
+        <p>I went straight into work after graduating Bellevue High in 2012 — at 18 I wasn't sure what I wanted to build a career on, and didn't want debt chasing a guess. A family-run shop hired me and I spent five years as a <span className="hl">woodworker</span>, restoring antique furniture.</p>
+        <p>I'd always been pulled toward computer science but never had the confidence or guidance to commit. In 2020 I finally enrolled in <strong>Ohio State's Full-Stack Engineering bootcamp</strong>. Career started there.</p>
+        <p>Interests run wide: MERN / MEVN / MEAN web stacks, AI and Web3, ML, and game development in Unreal and Unity. Hard-working, dedicated, always looking for the next thing to build.</p>
+        <p style={{ color: 'var(--ink-muted)', fontStyle: 'italic' }}>Thanks for reading.</p>
 
-      <div className='container d-flex justify-content-center'>
-        <div className='projectsCont'>
-            <h1>About Me</h1>
-            <hr/>
-            <div className="info">
-                <p>My name is <span>Austyn Whaley</span>, I am {age} years old and I was born in <span>Cincinnati Ohio</span>.</p>
-
-                <p>I grew up all around different areas in Northern Kentucky and went to a few different schools before I ended up in Belleuve,KY;
-                   and there is where I graduated from Bellevue High School in 2012.</p>
-
-                <p>Right after high school, I jumped into the workforce. Initially, I skipped pursuing further education because, at 18, 
-                  I was hesitant to commit to a path without a clear idea of what skills I wanted to develop for a career, and I didn't want to accumulate unnecessary debt.
-                   Instead, I landed a job at a family company run by one of my close friends. For five years, I worked as a woodworker, restoring antique furniture. 
-                   While there were aspects of the job I enjoyed, I never saw it as my long-term career. In truth, I'd always been drawn to Computer Science, but right after high school,
-                    I lacked confidence in pursuing it and had no guidance. However, in 2020, I finally took the plunge and enrolled in a <span>Full Stack Engineering </span> 
-                    program offered by <span>The Ohio State University</span>. That decision marked the beginning of my career journey.</p>
-
-                <p> I have a wide range of development interests from standard Frontend|Backend Web Application development with <span>MERN</span>, <span>MEVN</span>, <span>MEAN</span> tech stacks,
-                 to <span>AI</span> and <span>Web3</span> development and <span>Machine Learning</span>, and even to game development with <span>Unreal</span> and <span>Unity</span>.</p>
-
-                <p> I'm <span>hard working </span>and a <span>dedicated</span> developer constantly looking for new ideas and opportunities to strenghten my skills and knowledge</p>
-
-                <p> Thanks for reading!</p>
-              </div>
-              <hr/>
-              <CircleIcon/>
-              <div className='linksCon'>
-                <p className='spacer'>
-                  <a className='links' href='https://www.linkedin.com/in/austyn-whaley-a820421b5/'>LinkedIn</a>|
-                  <a className='links' href='https://github.com/austynwhaley'>GitHub</a>|
-                  <a className='links'href='https://www.instagram.com/whaleanator/'>Instagram</a>|
-                  <a className='links'href='https://twitter.com/whaleanator'>Twitter</a>
-                </p>
-              </div>
+        <div style={{ marginTop: 40 }}>
+          <div className="eyebrow"><span className="num">02</span>Elsewhere</div>
+          <div className="socials" style={{ marginTop: 14 }}>
+            <a className="social" href={PORTFOLIO.links.linkedin} target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            <a className="social" href={PORTFOLIO.links.github} target="_blank" rel="noreferrer">GitHub ↗</a>
+            <a className="social" href={PORTFOLIO.links.twitter} target="_blank" rel="noreferrer">Twitter ↗</a>
+            <a className="social" href={PORTFOLIO.links.instagram} target="_blank" rel="noreferrer">Instagram ↗</a>
+          </div>
         </div>
+      </div>
+
+      <aside className="about-side">
+        <div className="about-headshot">
+          <img src="/assets/headshot.png" alt="Austyn Whaley" />
+          <div className="caption">Iceland · '24</div>
+        </div>
+        <div className="fact-grid">
+          <div><div className="k">Based</div><div className="v">Bellevue, KY</div></div>
+          <div><div className="k">Currently</div><div className="v">GE Aerospace</div></div>
+          <div><div className="k">Stack</div><div className="v">TS · React · AWS</div></div>
+          <div><div className="k">Nights</div><div className="v">Unity / Unreal</div></div>
+          <div><div className="k">Age</div><div className="v">{PORTFOLIO.age}</div></div>
+          <div><div className="k">Status</div><div className="v" style={{ color: 'var(--good)' }}>● Open</div></div>
+        </div>
+      </aside>
     </div>
-    )
-}
+  );
+};
 
 export default About;

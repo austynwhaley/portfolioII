@@ -1,136 +1,70 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { React } from 'react';
-import '../Projects/style.css';
-import Button from 'react-bootstrap/Button';
-
-// images for projs
-import libmaker from "../../images/IMG_2748.PNG"
-import gainzz from "../../images/IMG_2749.PNG"
-import movie from "../../images/IMG_2747.PNG"
-import umarine from "../../images/umarine.gif"
-import darkdiv from "../../images/darkdivlogo.png"
-import amrbetz from "../../images/amrbets.png"
-import bellb from "../../images/bellb.png"
-
-
-
+import React, { useState, useMemo } from 'react';
+import { PORTFOLIO } from '../../data/portfolio';
 
 const Projects = () => {
+  const [filter, setFilter] = useState('All');
 
-return(
-    <div className='container d-flex justify-content-center'>
-        <div className='projectsCont'>
-            <h1>Projects</h1>
-            <hr/>
-            <div>
-                <h3>Web Apps</h3>
-                <div className='prj'>
-                <h5 className='prjTitle d-flex justify-content-center'>AMRBETZ</h5>
-                    <img className='prjImg rounded mx-auto d-block img-fluid ddivision' src={amrbetz} alt="twtter"/>
-                    <div className='prjm'>
-                        <p className='prjDesc d-flex justify-content-center'>This is a project I created as a goofy/fun learning experience</p>
-                        <p className='prjDesc d-flex justify-content-center'>This project is built with Python 3.11 and Tweepy, utilizing the Twitter API.</p>
-                        <p className='prjDesc d-flex justify-content-center'> It scrapes statistics from all 32 NFL teams and calculates weekly average stats.</p>
-                        <p className='prjDesc d-flex justify-content-center'> The data is intended to be used as a reference for building player prop bets.</p>
-                        <div className='btns d-flex justify-content-center'>
-                            <Button className='prjBtn' variant='warning' href='https://x.com/amrbetz'>
-                                Twitter Account
-                            </Button>
-                            <Button className='prjBtn' variant='warning' href='https://github.com/austynwhaley/amrbetz'>
-                                GitHub Repo
-                            </Button>
-                        </div>
-                    </div>
-                </div>
-                <div className='prj'>
-                        <h5 className='prjTitle d-flex justify-content-center'>Bellevue Barbershop</h5>
-                        <img className='prjImg rounded mx-auto d-block img-fluid' src={bellb} alt="laptop with app on screen"/>
-                        <p className='prjDesc d-flex justify-content-center'>This is a simple React app I created as freelance work for a local barber shop.</p>
-                        <p className='prjTech d-flex justify-content-center'>Customer requested the theme of the site to have a windows 98 vibe on the site</p>
-                        <div className='btns d-flex justify-content-center'>
-                            <Button className='prjBtn' variant='warning' href='https://austynwhaley.github.io/bellevuebarbershop/#/'>
-                                Bellevue Barbershop
-                            </Button>
-                        </div>
-                    </div>
-                <hr/>
-                <h3>Game Dev</h3>
-                <div className='prj'>
-                <h5 className='prjTitle d-flex justify-content-center'>Dark Division</h5>
-                    <img className='prjImg rounded mx-auto d-block img-fluid ddivision' src={darkdiv} alt="demo"/>
-                    <div className='prjm'>
-                        <p className='prjDesc d-flex justify-content-center'>This is a project I have been working on at Treplacon Studios</p>
-                        <p className='prjDesc d-flex justify-content-center'>This is built in Unity using C# scripts and assests and animations created in Blender</p>
-                        <div className='btns d-flex justify-content-center'>
-                            <Button className='prjBtn' variant='warning' href='https://www.youtube.com/watch?v=RQkLqoK_2ow&t=3s'>
-                                Video Demo
-                            </Button>
-                        </div>
-                    </div>
-                </div>
-                <div className='prj'>
-                <h5 className='prjTitle d-flex justify-content-center'>UltraMarine</h5>
-                    <img className='prjImg rounded mx-auto d-block img-fluid' src={umarine} alt="gif of demo"/>
-                    <div className='prjm'>
-                        <p className='prjDesc d-flex justify-content-center'>Here is a small clip of a 2D gunner platformer based off of Warhammer 40k.</p>
-                        <p className='prjDesc d-flex justify-content-center'>I built this solo in Unity using C# scripts</p>
-                        <p className='prjDesc d-flex justify-content-center'>Full demo coming soon!!</p>
-                    </div>
-                </div>
-                <hr/>
-                <h3>3D Modeling</h3>
-                <div className='turkModel d-flex justify-content-center'>
-                    <iframe title="Turk" height='500' width='500'  frameborder="0"  src="https://sketchfab.com/models/02f3b844a948482d80518e3803d79a2b/embed?autospin=1&autostart=1"> </iframe>
-                </div>
-                <div className='prjm'>
-                        <p className='prjDesc d-flex justify-content-center'>Here is a 3D model I crafted in ZBrush, along with other assets, for a game project in Unreal Engine. His name is Turk!</p>
-                        <p className='prjDesc d-flex justify-content-center'>The game is still in production, with collaboration from others. It's being built using Unreal Blueprints and C++ scripting.</p>
-                    </div>
-                <hr/>
-                <h3>Coding Bootcamp Projects</h3>
-                <div className='bootProjs '>
-                    <div className='prj'>
-                        <h5 className='prjTitle d-flex justify-content-center'>MovieJamz</h5>
-                        <img className='prjImg rounded mx-auto d-block img-fluid' src={movie} alt="laptop with app on screen"/>
-                        <p className='prjDesc d-flex justify-content-center'>This application uses a two 3rd party api's to find movies and their soundtracks and gives you links to listen to the tracks</p>
-                        <p className='prjTech d-flex justify-content-center'>Tech stack: HTML/CSS, Javascript, Bulma, Spotify API, IMDB API</p>
-                        <div className='btns d-flex justify-content-center'>
-                            <Button className='prjBtn' variant='warning' href='https://austynwhaley.github.io/moviejamz/'>
-                                MovieJamz
-                            </Button>
-                            <Button className='prjBtn' variant='warning' href='https://github.com/austynwhaley/moviejamz/tree/main'>
-                                GitHub Repo
-                            </Button>
-                        </div>
-                    </div>
-                    <div className='prj'>
-                        <h5 className='prjTitle d-flex justify-content-center'>LibMaker 3000</h5>
-                        <img className='prjImg rounded mx-auto d-block img-fluid' src={libmaker} alt="laptop with app on screen"/>
-                        <p className='prjDesc d-flex justify-content-center'>This was project 2 in my bootcamp course it is a full front/back-end application that prompts templates and saves MadLibs!</p>
-                        <p className='prjTech d-flex justify-content-center'>Tech stack: Javascript, MongoDB, Node.js, Express, Handlebars, bootstrap</p>
-                        <div className='btns d-flex justify-content-center'>
-                            <Button className='prjBtn' variant='warning' href='https://github.com/austynwhaley/make-your-madlibs'>
-                                GitHub Repo
-                            </Button>
-                        </div>
-                    </div>
-                    <div className='prj'>
-                        <h5 className='prjTitle d-flex justify-content-center'>Gainzz</h5>
-                        <img className='prjImg rounded mx-auto d-block img-fluid' src={gainzz} alt="laptop with app on screen"/>
-                        <p className='prjDesc d-flex justify-content-center'>Project 3 for course this is full front/back end application Gainzz is a workout tracking application</p>
-                        <p className='prjTech d-flex justify-content-center'>Tech stack: Javascript, MySQL, Node.js, Express, React.js, bootstrap</p>
-                        <div className='btns d-flex justify-content-center'>
-                            <Button className='prjBtn' variant='warning' href='https://github.com/austynwhaley/Gainzz'>
-                                GitHub Repo
-                            </Button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  const cats = useMemo(() => {
+    const s = new Set(['All']);
+    PORTFOLIO.projects.forEach((p) => s.add(p.category));
+    return Array.from(s);
+  }, []);
+
+  const list = PORTFOLIO.projects.filter((p) => filter === 'All' || p.category === filter);
+
+  return (
+    <div className="page page-fade projects-page" data-screen-label="work">
+      <div className="resume-head">
+        <h1>Work.</h1>
+        <div className="meta">
+          {PORTFOLIO.projects.length.toString().padStart(2, '0')} projects<br />
+          2021 — Present
         </div>
-    </div>
-)
+      </div>
 
+      <div className="projects-filter">
+        {cats.map((c) => (
+          <button
+            key={c}
+            className={'filter-chip ' + (filter === c ? 'is-active' : '')}
+            onClick={() => setFilter(c)}
+          >
+            {c}
+          </button>
+        ))}
+      </div>
+
+      <div className="projects-list">
+        {list.map((p) => (
+          <div key={p.id} className="projects-row">
+            <div className="year">{p.year}</div>
+            <div>
+              <h3 className="ptitle">{p.title}</h3>
+              <div className="pcat">{p.category} · {p.role} · {p.where}</div>
+            </div>
+            <div>
+              <p className="pblurb">{p.blurb}</p>
+              <div className="pstack">
+                {p.stack.map((s) => <span key={s} className="chip">{s}</span>)}
+              </div>
+            </div>
+            <div className="plinks">
+              {p.links.length ? p.links.map((l) => (
+                <a key={l.href} className="plink" href={l.href} target="_blank" rel="noreferrer">
+                  {l.label} <span>↗</span>
+                </a>
+              )) : <span className="plink" style={{ opacity: 0.5 }}>— private —</span>}
+            </div>
+            {p.image && (
+              <div className="preview">
+                <img src={p.image} alt="" className={p.imageFit === 'contain' ? 'contain' : ''} />
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default Projects;

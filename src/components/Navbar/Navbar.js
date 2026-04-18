@@ -1,52 +1,51 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import "bootstrap/dist/css/bootstrap.min.css";
-import "../Navbar/Navbar.css";
-import React from "react";
-import { HashLink as Link } from 'react-router-hash-link';
-import { useLocation } from 'react-router-dom';
+import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
-const Navbar = (props) => {
+const PAGE_ROUTES = {
+  home: '/',
+  work: '/projects/',
+  about: '/about/',
+  resume: '/resume/',
+};
+
+const Navbar = () => {
   const location = useLocation();
-  const onHomePage = location.pathname === "/";
+
+  const getActivePage = () => {
+    const path = location.pathname;
+    if (path === '/') return 'home';
+    if (path.startsWith('/projects')) return 'work';
+    if (path.startsWith('/about')) return 'about';
+    if (path.startsWith('/resume')) return 'resume';
+    return 'home';
+  };
+
+  const page = getActivePage();
+  const pages = ['home', 'work', 'about', 'resume'];
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
-      <a className="navbar-brand" href="/">
-        A|W
-      </a>
-      <span className='update'>Last updated: 03/24/2026 </span>
-
-      {/* Hide hamburger button if on home page */}
-      {!onHomePage && (
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-      )}
-
-      <div className={`collapse navbar-collapse ${onHomePage ? '' : ''}`} id="navbarNavDropdown">
-        <ul className="navbar-nav ml-auto">
-          {!onHomePage && (
-            <>
-              <li className={`nav-item ${props.status}`}>
-                <Link className="nav-link" to="/about">About</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/projects">Projects</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/resume">Resume</Link>
-              </li>
-            </>
-          )}
-        </ul>
+    <nav className="nav" data-screen-label="nav">
+      <div className="nav-inner">
+        <Link className="brand" to="/" style={{ textDecoration: 'none' }}>
+          <span className="dot" />
+          A|W
+        </Link>
+        <div className="nav-links">
+          {pages.map((p) => (
+            <Link
+              key={p}
+              className={'nav-link ' + (page === p ? 'is-active' : '')}
+              to={PAGE_ROUTES[p]}
+              style={{ textDecoration: 'none' }}
+            >
+              {p === 'work' ? 'Work' : p.charAt(0).toUpperCase() + p.slice(1)}
+            </Link>
+          ))}
+        </div>
+        <div className="nav-meta">
+          <span className="dot-live" />
+          Open to work · {new Date().toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}
+        </div>
       </div>
     </nav>
   );
